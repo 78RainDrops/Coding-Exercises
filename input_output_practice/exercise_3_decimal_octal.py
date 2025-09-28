@@ -1,4 +1,4 @@
-num = 8
+num = int("ok")
 
 print(f"{num:o}")
 # alternative
