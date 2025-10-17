@@ -12,3 +12,18 @@ print("Reverse: ", chunk2[::-1])
 chunk3 = sample_list[slice(6, 9)]
 print("Chunk 3: ", chunk3)
 print("Reverse: ", list(reversed(chunk3)))
+
+# alternative
+
+chunk_size = int(len(sample_list) / 3)
+start = 0
+end = chunk_size
+
+for i in range(3):
+    indexes = slice(start, end)
+
+    list_chunk = sample_list[indexes]
+    print(f"Chunk {i}, {list_chunk}")
+    print(f"After reverse: {list(reversed(list_chunk))}")
+    start = end
+    end += chunk_size
