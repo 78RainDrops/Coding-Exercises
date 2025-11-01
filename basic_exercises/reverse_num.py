@@ -7,21 +7,24 @@ def reverse_int(n, rev=0):
         num //= 10
     if negative_num:
         rev = -rev
-    
+
     rev = str(rev)
     rev = " ".join(rev)
 
     return rev
 
+
 # short anwer
 
-def rev_int (n):
+
+def rev_int(n):
     rev = 0
     while n > 0:
         digit = n % 10
 
-        n //= 10 
+        n //= 10
 
         print(digit, end=" ")
+
 
 rev_int(123456)
