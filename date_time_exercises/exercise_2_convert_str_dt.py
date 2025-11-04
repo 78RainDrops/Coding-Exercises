@@ -4,7 +4,7 @@ date_string = "Feb 25 2020 4:20PM"
 """
 %Y - Year
 %m - Month
-%d - dady
+%d - day
 %H - hour
 %M - minutes
 %S - seconds
